@@ -1,7 +1,7 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
 <qgis version="3.26.0-Buenos Aires" projectname="Legend Category Single">
   <homePath path=""/>
-  <title>Layer Category Single</title>
+  <title>Legend Category Single</title>
   <transaction mode="Disabled"/>
   <projectFlags set=""/>
   <projectCrs>
@@ -6285,7 +6285,7 @@ The suite allows you to automatically inherit from QGIS project:
     <parentidentifier></parentidentifier>
     <language></language>
     <type></type>
-    <title>Layer Category Single</title>
+    <title>Legend Category Single</title>
     <abstract></abstract>
     <contact>
       <name></name>
