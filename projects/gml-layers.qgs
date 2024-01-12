@@ -6,14 +6,14 @@
   <projectFlags set=""/>
   <projectCrs>
     <spatialrefsys nativeFormat="Wkt">
-      <wkt>PROJCRS["Monte Mario / Italy zone 1",BASEGEOGCRS["Monte Mario",DATUM["Monte Mario",ELLIPSOID["International 1924",6378388,297,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4265]],CONVERSION["Italy zone 1",METHOD["Transverse Mercator",ID["EPSG",9807]],PARAMETER["Latitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8801]],PARAMETER["Longitude of natural origin",9,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8802]],PARAMETER["Scale factor at natural origin",0.9996,SCALEUNIT["unity",1],ID["EPSG",8805]],PARAMETER["False easting",1500000,LENGTHUNIT["metre",1],ID["EPSG",8806]],PARAMETER["False northing",0,LENGTHUNIT["metre",1],ID["EPSG",8807]]],CS[Cartesian,2],AXIS["easting (X)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["northing (Y)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["Engineering survey, topographic mapping."],AREA["Italy - onshore and offshore - west of 12°E."],BBOX[36.53,5.93,47.04,12]],ID["EPSG",3003]]</wkt>
-      <proj4>+proj=tmerc +lat_0=0 +lon_0=9 +k=0.9996 +x_0=1500000 +y_0=0 +ellps=intl +units=m +no_defs</proj4>
-      <srsid>968</srsid>
-      <srid>3003</srid>
-      <authid>EPSG:3003</authid>
-      <description>Monte Mario / Italy zone 1</description>
-      <projectionacronym>tmerc</projectionacronym>
-      <ellipsoidacronym>EPSG:7022</ellipsoidacronym>
+      <wkt>PROJCRS["WGS 84 / Pseudo-Mercator",BASEGEOGCRS["WGS 84",ENSEMBLE["World Geodetic System 1984 ensemble",MEMBER["World Geodetic System 1984 (Transit)"],MEMBER["World Geodetic System 1984 (G730)"],MEMBER["World Geodetic System 1984 (G873)"],MEMBER["World Geodetic System 1984 (G1150)"],MEMBER["World Geodetic System 1984 (G1674)"],MEMBER["World Geodetic System 1984 (G1762)"],MEMBER["World Geodetic System 1984 (G2139)"],ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]],ENSEMBLEACCURACY[2.0]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4326]],CONVERSION["Popular Visualisation Pseudo-Mercator",METHOD["Popular Visualisation Pseudo Mercator",ID["EPSG",1024]],PARAMETER["Latitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8801]],PARAMETER["Longitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8802]],PARAMETER["False easting",0,LENGTHUNIT["metre",1],ID["EPSG",8806]],PARAMETER["False northing",0,LENGTHUNIT["metre",1],ID["EPSG",8807]]],CS[Cartesian,2],AXIS["easting (X)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["northing (Y)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["Web mapping and visualisation."],AREA["World between 85.06°S and 85.06°N."],BBOX[-85.06,-180,85.06,180]],ID["EPSG",3857]]</wkt>
+      <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0 +lon_0=0 +x_0=0 +y_0=0 +k=1 +units=m +nadgrids=@null +wktext +no_defs</proj4>
+      <srsid>3857</srsid>
+      <srid>3857</srid>
+      <authid>EPSG:3857</authid>
+      <description>WGS 84 / Pseudo-Mercator</description>
+      <projectionacronym>merc</projectionacronym>
+      <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
       <geographicflag>false</geographicflag>
     </spatialrefsys>
   </projectCrs>
@@ -21,12 +21,12 @@
     <customproperties>
       <Option/>
     </customproperties>
-    <layer-tree-layer legend_exp="" checked="Qt::Checked" id="Watercourse_6e819e26_e9e7_43db_9759_0e2ce5fc69cf" source="../project_data/gml/watercourse.gml|layername=Watercourse|geometrytype=Polygon|uniqueGeometryType=yes" patch_size="-1,-1" legend_split_behavior="0" providerKey="ogr" expanded="1" name="application/vnd.ogc.gml">
+    <layer-tree-layer source="../project_data/gml/watercourse.gml|layername=Watercourse|geometrytype=Polygon|uniqueGeometryType=yes" expanded="1" checked="Qt::Checked" name="application/vnd.ogc.gml" legend_exp="" id="Watercourse_6e819e26_e9e7_43db_9759_0e2ce5fc69cf" providerKey="ogr" legend_split_behavior="0" patch_size="-1,-1">
       <customproperties>
         <Option/>
       </customproperties>
     </layer-tree-layer>
-    <layer-tree-layer legend_exp="" checked="Qt::Checked" id="Ambiti_di_Paesaggio_6c3a4278_5aab_4f0f_8d17_68322d25941c" source="contextualWMSLegend=0&amp;crs=EPSG:3003&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=rt_piapae.idambpae.rt.poly&amp;styles&amp;url=http://www502.regione.toscana.it/wmsraster/com.rt.wms.RTmap/wms?map%3Dwmspiapae&amp;http-header:referer=" patch_size="-1,-1" legend_split_behavior="0" providerKey="wms" expanded="0" name="text/gml">
+    <layer-tree-layer source="contextualWMSLegend=0&amp;crs=EPSG:3003&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=rt_piapae.idambpae.rt.poly&amp;styles&amp;url=http://www502.regione.toscana.it/wmsraster/com.rt.wms.RTmap/wms?map%3Dwmspiapae&amp;http-header:referer=" expanded="0" checked="Qt::Checked" name="text/gml" legend_exp="" id="Ambiti_di_Paesaggio_6c3a4278_5aab_4f0f_8d17_68322d25941c" providerKey="wms" legend_split_behavior="0" patch_size="-1,-1">
       <customproperties>
         <Option/>
       </customproperties>
@@ -36,32 +36,32 @@
       <item>Watercourse_6e819e26_e9e7_43db_9759_0e2ce5fc69cf</item>
     </custom-order>
   </layer-tree-group>
-  <snapping-settings maxScale="0" mode="2" unit="1" self-snapping="0" intersection-snapping="0" scaleDependencyMode="0" type="1" minScale="0" enabled="0" tolerance="12">
+  <snapping-settings enabled="0" type="1" scaleDependencyMode="0" maxScale="0" unit="1" intersection-snapping="0" self-snapping="0" minScale="0" tolerance="12" mode="2">
     <individual-layer-settings>
-      <layer-setting maxScale="0" id="Watercourse_6e819e26_e9e7_43db_9759_0e2ce5fc69cf" type="1" minScale="0" units="1" enabled="0" tolerance="12"/>
+      <layer-setting enabled="0" type="1" maxScale="0" minScale="0" id="Watercourse_6e819e26_e9e7_43db_9759_0e2ce5fc69cf" tolerance="12" units="1"/>
     </individual-layer-settings>
   </snapping-settings>
   <relations/>
   <polymorphicRelations/>
-  <mapcanvas annotationsVisible="1" name="theMapCanvas">
+  <mapcanvas name="theMapCanvas" annotationsVisible="1">
     <units>meters</units>
     <extent>
-      <xmin>1549325.75</xmin>
-      <ymin>4672168.5</ymin>
-      <xmax>1777144.25</xmax>
-      <ymax>4930951.5</ymax>
+      <xmin>1068074.19360611867159605</xmin>
+      <ymin>5183794.21474149730056524</ymin>
+      <xmax>1389477.93707939703017473</xmax>
+      <ymax>5547785.97133241686969995</ymax>
     </extent>
     <rotation>0</rotation>
     <destinationsrs>
       <spatialrefsys nativeFormat="Wkt">
-        <wkt>PROJCRS["Monte Mario / Italy zone 1",BASEGEOGCRS["Monte Mario",DATUM["Monte Mario",ELLIPSOID["International 1924",6378388,297,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4265]],CONVERSION["Italy zone 1",METHOD["Transverse Mercator",ID["EPSG",9807]],PARAMETER["Latitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8801]],PARAMETER["Longitude of natural origin",9,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8802]],PARAMETER["Scale factor at natural origin",0.9996,SCALEUNIT["unity",1],ID["EPSG",8805]],PARAMETER["False easting",1500000,LENGTHUNIT["metre",1],ID["EPSG",8806]],PARAMETER["False northing",0,LENGTHUNIT["metre",1],ID["EPSG",8807]]],CS[Cartesian,2],AXIS["easting (X)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["northing (Y)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["Engineering survey, topographic mapping."],AREA["Italy - onshore and offshore - west of 12°E."],BBOX[36.53,5.93,47.04,12]],ID["EPSG",3003]]</wkt>
-        <proj4>+proj=tmerc +lat_0=0 +lon_0=9 +k=0.9996 +x_0=1500000 +y_0=0 +ellps=intl +units=m +no_defs</proj4>
-        <srsid>968</srsid>
-        <srid>3003</srid>
-        <authid>EPSG:3003</authid>
-        <description>Monte Mario / Italy zone 1</description>
-        <projectionacronym>tmerc</projectionacronym>
-        <ellipsoidacronym>EPSG:7022</ellipsoidacronym>
+        <wkt>PROJCRS["WGS 84 / Pseudo-Mercator",BASEGEOGCRS["WGS 84",ENSEMBLE["World Geodetic System 1984 ensemble",MEMBER["World Geodetic System 1984 (Transit)"],MEMBER["World Geodetic System 1984 (G730)"],MEMBER["World Geodetic System 1984 (G873)"],MEMBER["World Geodetic System 1984 (G1150)"],MEMBER["World Geodetic System 1984 (G1674)"],MEMBER["World Geodetic System 1984 (G1762)"],MEMBER["World Geodetic System 1984 (G2139)"],ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]],ENSEMBLEACCURACY[2.0]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4326]],CONVERSION["Popular Visualisation Pseudo-Mercator",METHOD["Popular Visualisation Pseudo Mercator",ID["EPSG",1024]],PARAMETER["Latitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8801]],PARAMETER["Longitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8802]],PARAMETER["False easting",0,LENGTHUNIT["metre",1],ID["EPSG",8806]],PARAMETER["False northing",0,LENGTHUNIT["metre",1],ID["EPSG",8807]]],CS[Cartesian,2],AXIS["easting (X)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["northing (Y)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["Web mapping and visualisation."],AREA["World between 85.06°S and 85.06°N."],BBOX[-85.06,-180,85.06,180]],ID["EPSG",3857]]</wkt>
+        <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0 +lon_0=0 +x_0=0 +y_0=0 +k=1 +units=m +nadgrids=@null +wktext +no_defs</proj4>
+        <srsid>3857</srsid>
+        <srid>3857</srid>
+        <authid>EPSG:3857</authid>
+        <description>WGS 84 / Pseudo-Mercator</description>
+        <projectionacronym>merc</projectionacronym>
+        <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
         <geographicflag>false</geographicflag>
       </spatialrefsys>
     </destinationsrs>
@@ -182,19 +182,19 @@
   </DataPlotly>
   <projectModels/>
   <legend updateDrawingOrder="true">
-    <legendlayer checked="Qt::Checked" open="true" showFeatureCount="0" drawingOrder="-1" name="application/vnd.ogc.gml">
+    <legendlayer showFeatureCount="0" drawingOrder="-1" checked="Qt::Checked" open="true" name="application/vnd.ogc.gml">
       <filegroup open="true" hidden="false">
         <legendlayerfile visible="1" isInOverview="0" layerid="Watercourse_6e819e26_e9e7_43db_9759_0e2ce5fc69cf"/>
       </filegroup>
     </legendlayer>
-    <legendlayer checked="Qt::Checked" open="false" showFeatureCount="0" drawingOrder="-1" name="text/gml">
+    <legendlayer showFeatureCount="0" drawingOrder="-1" checked="Qt::Checked" open="false" name="text/gml">
       <filegroup open="false" hidden="false">
         <legendlayerfile visible="1" isInOverview="0" layerid="Ambiti_di_Paesaggio_6c3a4278_5aab_4f0f_8d17_68322d25941c"/>
       </filegroup>
     </legendlayer>
   </legend>
   <mapViewDocks/>
-  <main-annotation-layer refreshOnNotifyEnabled="0" type="annotation" legendPlaceholderImage="" autoRefreshEnabled="0" autoRefreshTime="0" refreshOnNotifyMessage="">
+  <main-annotation-layer type="annotation" autoRefreshEnabled="0" legendPlaceholderImage="" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" autoRefreshTime="0">
     <id>Annotazioni_509be64c_69fe_4c04_bdc3_37e1710da62a</id>
     <datasource></datasource>
     <keywordList>
@@ -203,14 +203,14 @@
     <layername>Annotazioni</layername>
     <srs>
       <spatialrefsys nativeFormat="Wkt">
-        <wkt>PROJCRS["Monte Mario / Italy zone 1",BASEGEOGCRS["Monte Mario",DATUM["Monte Mario",ELLIPSOID["International 1924",6378388,297,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4265]],CONVERSION["Italy zone 1",METHOD["Transverse Mercator",ID["EPSG",9807]],PARAMETER["Latitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8801]],PARAMETER["Longitude of natural origin",9,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8802]],PARAMETER["Scale factor at natural origin",0.9996,SCALEUNIT["unity",1],ID["EPSG",8805]],PARAMETER["False easting",1500000,LENGTHUNIT["metre",1],ID["EPSG",8806]],PARAMETER["False northing",0,LENGTHUNIT["metre",1],ID["EPSG",8807]]],CS[Cartesian,2],AXIS["easting (X)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["northing (Y)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["Engineering survey, topographic mapping."],AREA["Italy - onshore and offshore - west of 12°E."],BBOX[36.53,5.93,47.04,12]],ID["EPSG",3003]]</wkt>
-        <proj4>+proj=tmerc +lat_0=0 +lon_0=9 +k=0.9996 +x_0=1500000 +y_0=0 +ellps=intl +units=m +no_defs</proj4>
-        <srsid>968</srsid>
-        <srid>3003</srid>
-        <authid>EPSG:3003</authid>
-        <description>Monte Mario / Italy zone 1</description>
-        <projectionacronym>tmerc</projectionacronym>
-        <ellipsoidacronym>EPSG:7022</ellipsoidacronym>
+        <wkt>PROJCRS["WGS 84 / Pseudo-Mercator",BASEGEOGCRS["WGS 84",ENSEMBLE["World Geodetic System 1984 ensemble",MEMBER["World Geodetic System 1984 (Transit)"],MEMBER["World Geodetic System 1984 (G730)"],MEMBER["World Geodetic System 1984 (G873)"],MEMBER["World Geodetic System 1984 (G1150)"],MEMBER["World Geodetic System 1984 (G1674)"],MEMBER["World Geodetic System 1984 (G1762)"],MEMBER["World Geodetic System 1984 (G2139)"],ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]],ENSEMBLEACCURACY[2.0]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4326]],CONVERSION["Popular Visualisation Pseudo-Mercator",METHOD["Popular Visualisation Pseudo Mercator",ID["EPSG",1024]],PARAMETER["Latitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8801]],PARAMETER["Longitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8802]],PARAMETER["False easting",0,LENGTHUNIT["metre",1],ID["EPSG",8806]],PARAMETER["False northing",0,LENGTHUNIT["metre",1],ID["EPSG",8807]]],CS[Cartesian,2],AXIS["easting (X)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["northing (Y)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["Web mapping and visualisation."],AREA["World between 85.06°S and 85.06°N."],BBOX[-85.06,-180,85.06,180]],ID["EPSG",3857]]</wkt>
+        <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0 +lon_0=0 +x_0=0 +y_0=0 +k=1 +units=m +nadgrids=@null +wktext +no_defs</proj4>
+        <srsid>3857</srsid>
+        <srid>3857</srid>
+        <authid>EPSG:3857</authid>
+        <description>WGS 84 / Pseudo-Mercator</description>
+        <projectionacronym>merc</projectionacronym>
+        <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
         <geographicflag>false</geographicflag>
       </spatialrefsys>
     </srs>
@@ -245,7 +245,7 @@
     <paintEffect/>
   </main-annotation-layer>
   <projectlayers>
-    <maplayer maxScale="0" refreshOnNotifyEnabled="0" type="raster" legendPlaceholderImage="" styleCategories="AllStyleCategories" minScale="1e+08" autoRefreshEnabled="0" hasScaleBasedVisibilityFlag="0" autoRefreshTime="0" refreshOnNotifyMessage="">
+    <maplayer type="raster" autoRefreshEnabled="0" legendPlaceholderImage="" styleCategories="AllStyleCategories" maxScale="0" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" hasScaleBasedVisibilityFlag="0" minScale="1e+08" autoRefreshTime="0">
       <extent>
         <xmin>1554750</xmin>
         <ymin>4678330</ymin>
@@ -304,7 +304,7 @@
       </resourceMetadata>
       <provider>wms</provider>
       <noData>
-        <noDataList bandNo="1" useSrcNoData="0"/>
+        <noDataList useSrcNoData="0" bandNo="1"/>
       </noData>
       <map-layer-style-manager current="default">
         <map-layer-style name="default"/>
@@ -316,13 +316,13 @@
         <Searchable>0</Searchable>
         <Private>0</Private>
       </flags>
-      <temporal fetchMode="0" mode="0" enabled="0">
+      <temporal fetchMode="0" enabled="0" mode="0">
         <fixedRange>
           <start></start>
           <end></end>
         </fixedRange>
       </temporal>
-      <elevation symbology="Line" zscale="1" band="1" enabled="0" zoffset="0">
+      <elevation enabled="0" zoffset="0" symbology="Line" band="1" zscale="1">
         <data-defined-properties>
           <Option type="Map">
             <Option type="QString" value="" name="name"/>
@@ -331,7 +331,7 @@
           </Option>
         </data-defined-properties>
         <profileLineSymbol>
-          <symbol frame_rate="10" clip_to_extent="1" is_animated="0" type="line" force_rhr="0" alpha="1" name="">
+          <symbol clip_to_extent="1" type="line" force_rhr="0" name="" frame_rate="10" alpha="1" is_animated="0">
             <data_defined_properties>
               <Option type="Map">
                 <Option type="QString" value="" name="name"/>
@@ -339,7 +339,7 @@
                 <Option type="QString" value="collection" name="type"/>
               </Option>
             </data_defined_properties>
-            <layer class="SimpleLine" enabled="1" pass="0" locked="0">
+            <layer enabled="1" locked="0" class="SimpleLine" pass="0">
               <Option type="Map">
                 <Option type="QString" value="0" name="align_dash_pattern"/>
                 <Option type="QString" value="square" name="capstyle"/>
@@ -380,7 +380,7 @@
           </symbol>
         </profileLineSymbol>
         <profileFillSymbol>
-          <symbol frame_rate="10" clip_to_extent="1" is_animated="0" type="fill" force_rhr="0" alpha="1" name="">
+          <symbol clip_to_extent="1" type="fill" force_rhr="0" name="" frame_rate="10" alpha="1" is_animated="0">
             <data_defined_properties>
               <Option type="Map">
                 <Option type="QString" value="" name="name"/>
@@ -388,7 +388,7 @@
                 <Option type="QString" value="collection" name="type"/>
               </Option>
             </data_defined_properties>
-            <layer class="SimpleFill" enabled="1" pass="0" locked="0">
+            <layer enabled="1" locked="0" class="SimpleFill" pass="0">
               <Option type="Map">
                 <Option type="QString" value="3x:0,0,0,0,0,0" name="border_width_map_unit_scale"/>
                 <Option type="QString" value="243,166,178,255" name="color"/>
@@ -427,9 +427,9 @@
       </pipe-data-defined-properties>
       <pipe>
         <provider>
-          <resampling zoomedOutResamplingMethod="nearestNeighbour" zoomedInResamplingMethod="nearestNeighbour" enabled="false" maxOversampling="2"/>
+          <resampling zoomedInResamplingMethod="nearestNeighbour" enabled="false" zoomedOutResamplingMethod="nearestNeighbour" maxOversampling="2"/>
         </provider>
-        <rasterrenderer alphaBand="-1" opacity="1" type="singlebandcolordata" nodataColor="" band="1">
+        <rasterrenderer type="singlebandcolordata" opacity="1" nodataColor="" alphaBand="-1" band="1">
           <rasterTransparency/>
           <minMaxOrigin>
             <limits>None</limits>
@@ -440,14 +440,14 @@
             <stdDevFactor>2</stdDevFactor>
           </minMaxOrigin>
         </rasterrenderer>
-        <brightnesscontrast brightness="0" gamma="1" contrast="0"/>
-        <huesaturation colorizeStrength="100" grayscaleMode="0" colorizeGreen="128" saturation="0" colorizeRed="255" colorizeOn="0" colorizeBlue="128" invertColors="0"/>
+        <brightnesscontrast gamma="1" brightness="0" contrast="0"/>
+        <huesaturation grayscaleMode="0" invertColors="0" colorizeStrength="100" colorizeOn="0" colorizeBlue="128" saturation="0" colorizeGreen="128" colorizeRed="255"/>
         <rasterresampler maxOversampling="2"/>
         <resamplingStage>resamplingFilter</resamplingStage>
       </pipe>
       <blendMode>0</blendMode>
     </maplayer>
-    <maplayer labelsEnabled="0" readOnly="0" refreshOnNotifyEnabled="0" autoRefreshEnabled="0" refreshOnNotifyMessage="" simplifyAlgorithm="0" maxScale="0" type="vector" autoRefreshTime="0" simplifyLocal="1" wkbType="Polygon" symbologyReferenceScale="-1" legendPlaceholderImage="" simplifyDrawingHints="1" minScale="100000000" hasScaleBasedVisibilityFlag="0" simplifyMaxScale="1" styleCategories="AllStyleCategories" geometry="Polygon" simplifyDrawingTol="1">
+    <maplayer geometry="Polygon" refreshOnNotifyEnabled="0" simplifyDrawingHints="1" autoRefreshEnabled="0" type="vector" simplifyAlgorithm="0" simplifyMaxScale="1" legendPlaceholderImage="" autoRefreshTime="0" simplifyDrawingTol="1" readOnly="0" wkbType="Polygon" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" labelsEnabled="0" styleCategories="AllStyleCategories" minScale="100000000" maxScale="0" symbologyReferenceScale="-1" refreshOnNotifyMessage="">
       <extent>
         <xmin>359991.4680299999890849</xmin>
         <ymin>576637.8244499999564141</ymin>
@@ -520,13 +520,13 @@
         <Searchable>1</Searchable>
         <Private>0</Private>
       </flags>
-      <temporal fixedDuration="0" durationUnit="min" mode="0" durationField="" startField="" endField="" accumulate="0" limitMode="0" startExpression="" enabled="0" endExpression="">
+      <temporal enabled="0" accumulate="0" startField="" endExpression="" startExpression="" durationUnit="min" limitMode="0" fixedDuration="0" durationField="" mode="0" endField="">
         <fixedRange>
           <start></start>
           <end></end>
         </fixedRange>
       </temporal>
-      <elevation symbology="Line" respectLayerSymbol="1" zscale="1" showMarkerSymbolInSurfacePlots="0" type="IndividualFeatures" extrusionEnabled="0" extrusion="0" zoffset="0" clamping="Terrain" binding="Centroid">
+      <elevation clamping="Terrain" respectLayerSymbol="1" zoffset="0" type="IndividualFeatures" symbology="Line" showMarkerSymbolInSurfacePlots="0" extrusion="0" zscale="1" extrusionEnabled="0" binding="Centroid">
         <data-defined-properties>
           <Option type="Map">
             <Option type="QString" value="" name="name"/>
@@ -535,7 +535,7 @@
           </Option>
         </data-defined-properties>
         <profileLineSymbol>
-          <symbol frame_rate="10" clip_to_extent="1" is_animated="0" type="line" force_rhr="0" alpha="1" name="">
+          <symbol clip_to_extent="1" type="line" force_rhr="0" name="" frame_rate="10" alpha="1" is_animated="0">
             <data_defined_properties>
               <Option type="Map">
                 <Option type="QString" value="" name="name"/>
@@ -543,7 +543,7 @@
                 <Option type="QString" value="collection" name="type"/>
               </Option>
             </data_defined_properties>
-            <layer class="SimpleLine" enabled="1" pass="0" locked="0">
+            <layer enabled="1" locked="0" class="SimpleLine" pass="0">
               <Option type="Map">
                 <Option type="QString" value="0" name="align_dash_pattern"/>
                 <Option type="QString" value="square" name="capstyle"/>
@@ -584,7 +584,7 @@
           </symbol>
         </profileLineSymbol>
         <profileFillSymbol>
-          <symbol frame_rate="10" clip_to_extent="1" is_animated="0" type="fill" force_rhr="0" alpha="1" name="">
+          <symbol clip_to_extent="1" type="fill" force_rhr="0" name="" frame_rate="10" alpha="1" is_animated="0">
             <data_defined_properties>
               <Option type="Map">
                 <Option type="QString" value="" name="name"/>
@@ -592,7 +592,7 @@
                 <Option type="QString" value="collection" name="type"/>
               </Option>
             </data_defined_properties>
-            <layer class="SimpleFill" enabled="1" pass="0" locked="0">
+            <layer enabled="1" locked="0" class="SimpleFill" pass="0">
               <Option type="Map">
                 <Option type="QString" value="3x:0,0,0,0,0,0" name="border_width_map_unit_scale"/>
                 <Option type="QString" value="196,60,57,255" name="color"/>
@@ -617,7 +617,7 @@
           </symbol>
         </profileFillSymbol>
         <profileMarkerSymbol>
-          <symbol frame_rate="10" clip_to_extent="1" is_animated="0" type="marker" force_rhr="0" alpha="1" name="">
+          <symbol clip_to_extent="1" type="marker" force_rhr="0" name="" frame_rate="10" alpha="1" is_animated="0">
             <data_defined_properties>
               <Option type="Map">
                 <Option type="QString" value="" name="name"/>
@@ -625,7 +625,7 @@
                 <Option type="QString" value="collection" name="type"/>
               </Option>
             </data_defined_properties>
-            <layer class="SimpleMarker" enabled="1" pass="0" locked="0">
+            <layer enabled="1" locked="0" class="SimpleMarker" pass="0">
               <Option type="Map">
                 <Option type="QString" value="0" name="angle"/>
                 <Option type="QString" value="square" name="cap_style"/>
@@ -660,7 +660,7 @@
       </elevation>
       <renderer-v2 referencescale="-1" type="singleSymbol" enableorderby="0" symbollevels="0" forceraster="0">
         <symbols>
-          <symbol frame_rate="10" clip_to_extent="1" is_animated="0" type="fill" force_rhr="0" alpha="1" name="0">
+          <symbol clip_to_extent="1" type="fill" force_rhr="0" name="0" frame_rate="10" alpha="1" is_animated="0">
             <data_defined_properties>
               <Option type="Map">
                 <Option type="QString" value="" name="name"/>
@@ -668,7 +668,7 @@
                 <Option type="QString" value="collection" name="type"/>
               </Option>
             </data_defined_properties>
-            <layer class="SimpleFill" enabled="1" pass="0" locked="0">
+            <layer enabled="1" locked="0" class="SimpleFill" pass="0">
               <Option type="Map">
                 <Option type="QString" value="3x:0,0,0,0,0,0" name="border_width_map_unit_scale"/>
                 <Option type="QString" value="190,178,151,255" name="color"/>
@@ -701,13 +701,13 @@
       <blendMode>0</blendMode>
       <featureBlendMode>0</featureBlendMode>
       <layerOpacity>1</layerOpacity>
-      <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
+      <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
         <activeChecks type="StringList">
           <Option type="QString" value=""/>
         </activeChecks>
         <checkConfiguration/>
       </geometryOptions>
-      <legend showLabelLegend="0" type="default-vector"/>
+      <legend type="default-vector" showLabelLegend="0"/>
       <referencedLayers/>
       <fieldConfiguration>
         <field configurationFlags="None" name="gml_id">
@@ -887,85 +887,85 @@
         </field>
       </fieldConfiguration>
       <aliases>
-        <alias field="gml_id" index="0" name=""/>
-        <alias field="description" index="1" name=""/>
-        <alias field="beginLifespanVersion" index="2" name=""/>
-        <alias field="localId" index="3" name=""/>
-        <alias field="namespace" index="4" name=""/>
-        <alias field="origin" index="5" name=""/>
-        <alias field="persistence" index="6" name=""/>
-        <alias field="tidal" index="7" name=""/>
-        <alias field="drainsBasin" index="8" name=""/>
-        <alias field="delineationKnown" index="9" name=""/>
-        <alias field="length" index="10" name=""/>
-        <alias field="length_uom" index="11" name=""/>
-        <alias field="level" index="12" name=""/>
-        <alias field="lower" index="13" name=""/>
-        <alias field="lower_uom" index="14" name=""/>
-        <alias field="upper" index="15" name=""/>
-        <alias field="upper_uom" index="16" name=""/>
-        <alias field="name" index="17" name=""/>
-        <alias field="language" index="18" name=""/>
-        <alias field="nativeness" index="19" name=""/>
-        <alias field="nameStatus" index="20" name=""/>
-        <alias field="sourceOfName" index="21" name=""/>
-        <alias field="pronunciation" index="22" name=""/>
-        <alias field="text" index="23" name=""/>
-        <alias field="script" index="24" name=""/>
+        <alias name="" field="gml_id" index="0"/>
+        <alias name="" field="description" index="1"/>
+        <alias name="" field="beginLifespanVersion" index="2"/>
+        <alias name="" field="localId" index="3"/>
+        <alias name="" field="namespace" index="4"/>
+        <alias name="" field="origin" index="5"/>
+        <alias name="" field="persistence" index="6"/>
+        <alias name="" field="tidal" index="7"/>
+        <alias name="" field="drainsBasin" index="8"/>
+        <alias name="" field="delineationKnown" index="9"/>
+        <alias name="" field="length" index="10"/>
+        <alias name="" field="length_uom" index="11"/>
+        <alias name="" field="level" index="12"/>
+        <alias name="" field="lower" index="13"/>
+        <alias name="" field="lower_uom" index="14"/>
+        <alias name="" field="upper" index="15"/>
+        <alias name="" field="upper_uom" index="16"/>
+        <alias name="" field="name" index="17"/>
+        <alias name="" field="language" index="18"/>
+        <alias name="" field="nativeness" index="19"/>
+        <alias name="" field="nameStatus" index="20"/>
+        <alias name="" field="sourceOfName" index="21"/>
+        <alias name="" field="pronunciation" index="22"/>
+        <alias name="" field="text" index="23"/>
+        <alias name="" field="script" index="24"/>
       </aliases>
       <defaults>
-        <default field="gml_id" applyOnUpdate="0" expression=""/>
-        <default field="description" applyOnUpdate="0" expression=""/>
-        <default field="beginLifespanVersion" applyOnUpdate="0" expression=""/>
-        <default field="localId" applyOnUpdate="0" expression=""/>
-        <default field="namespace" applyOnUpdate="0" expression=""/>
-        <default field="origin" applyOnUpdate="0" expression=""/>
-        <default field="persistence" applyOnUpdate="0" expression=""/>
-        <default field="tidal" applyOnUpdate="0" expression=""/>
-        <default field="drainsBasin" applyOnUpdate="0" expression=""/>
-        <default field="delineationKnown" applyOnUpdate="0" expression=""/>
-        <default field="length" applyOnUpdate="0" expression=""/>
-        <default field="length_uom" applyOnUpdate="0" expression=""/>
-        <default field="level" applyOnUpdate="0" expression=""/>
-        <default field="lower" applyOnUpdate="0" expression=""/>
-        <default field="lower_uom" applyOnUpdate="0" expression=""/>
-        <default field="upper" applyOnUpdate="0" expression=""/>
-        <default field="upper_uom" applyOnUpdate="0" expression=""/>
-        <default field="name" applyOnUpdate="0" expression=""/>
-        <default field="language" applyOnUpdate="0" expression=""/>
-        <default field="nativeness" applyOnUpdate="0" expression=""/>
-        <default field="nameStatus" applyOnUpdate="0" expression=""/>
-        <default field="sourceOfName" applyOnUpdate="0" expression=""/>
-        <default field="pronunciation" applyOnUpdate="0" expression=""/>
-        <default field="text" applyOnUpdate="0" expression=""/>
-        <default field="script" applyOnUpdate="0" expression=""/>
+        <default field="gml_id" expression="" applyOnUpdate="0"/>
+        <default field="description" expression="" applyOnUpdate="0"/>
+        <default field="beginLifespanVersion" expression="" applyOnUpdate="0"/>
+        <default field="localId" expression="" applyOnUpdate="0"/>
+        <default field="namespace" expression="" applyOnUpdate="0"/>
+        <default field="origin" expression="" applyOnUpdate="0"/>
+        <default field="persistence" expression="" applyOnUpdate="0"/>
+        <default field="tidal" expression="" applyOnUpdate="0"/>
+        <default field="drainsBasin" expression="" applyOnUpdate="0"/>
+        <default field="delineationKnown" expression="" applyOnUpdate="0"/>
+        <default field="length" expression="" applyOnUpdate="0"/>
+        <default field="length_uom" expression="" applyOnUpdate="0"/>
+        <default field="level" expression="" applyOnUpdate="0"/>
+        <default field="lower" expression="" applyOnUpdate="0"/>
+        <default field="lower_uom" expression="" applyOnUpdate="0"/>
+        <default field="upper" expression="" applyOnUpdate="0"/>
+        <default field="upper_uom" expression="" applyOnUpdate="0"/>
+        <default field="name" expression="" applyOnUpdate="0"/>
+        <default field="language" expression="" applyOnUpdate="0"/>
+        <default field="nativeness" expression="" applyOnUpdate="0"/>
+        <default field="nameStatus" expression="" applyOnUpdate="0"/>
+        <default field="sourceOfName" expression="" applyOnUpdate="0"/>
+        <default field="pronunciation" expression="" applyOnUpdate="0"/>
+        <default field="text" expression="" applyOnUpdate="0"/>
+        <default field="script" expression="" applyOnUpdate="0"/>
       </defaults>
       <constraints>
-        <constraint unique_strength="0" field="gml_id" constraints="1" notnull_strength="1" exp_strength="0"/>
-        <constraint unique_strength="0" field="description" constraints="0" notnull_strength="0" exp_strength="0"/>
-        <constraint unique_strength="0" field="beginLifespanVersion" constraints="0" notnull_strength="0" exp_strength="0"/>
-        <constraint unique_strength="0" field="localId" constraints="0" notnull_strength="0" exp_strength="0"/>
-        <constraint unique_strength="0" field="namespace" constraints="0" notnull_strength="0" exp_strength="0"/>
-        <constraint unique_strength="0" field="origin" constraints="0" notnull_strength="0" exp_strength="0"/>
-        <constraint unique_strength="0" field="persistence" constraints="0" notnull_strength="0" exp_strength="0"/>
-        <constraint unique_strength="0" field="tidal" constraints="0" notnull_strength="0" exp_strength="0"/>
-        <constraint unique_strength="0" field="drainsBasin" constraints="0" notnull_strength="0" exp_strength="0"/>
-        <constraint unique_strength="0" field="delineationKnown" constraints="0" notnull_strength="0" exp_strength="0"/>
-        <constraint unique_strength="0" field="length" constraints="0" notnull_strength="0" exp_strength="0"/>
-        <constraint unique_strength="0" field="length_uom" constraints="0" notnull_strength="0" exp_strength="0"/>
-        <constraint unique_strength="0" field="level" constraints="0" notnull_strength="0" exp_strength="0"/>
-        <constraint unique_strength="0" field="lower" constraints="0" notnull_strength="0" exp_strength="0"/>
-        <constraint unique_strength="0" field="lower_uom" constraints="0" notnull_strength="0" exp_strength="0"/>
-        <constraint unique_strength="0" field="upper" constraints="0" notnull_strength="0" exp_strength="0"/>
-        <constraint unique_strength="0" field="upper_uom" constraints="0" notnull_strength="0" exp_strength="0"/>
-        <constraint unique_strength="0" field="name" constraints="0" notnull_strength="0" exp_strength="0"/>
-        <constraint unique_strength="0" field="language" constraints="0" notnull_strength="0" exp_strength="0"/>
-        <constraint unique_strength="0" field="nativeness" constraints="0" notnull_strength="0" exp_strength="0"/>
-        <constraint unique_strength="0" field="nameStatus" constraints="0" notnull_strength="0" exp_strength="0"/>
-        <constraint unique_strength="0" field="sourceOfName" constraints="0" notnull_strength="0" exp_strength="0"/>
-        <constraint unique_strength="0" field="pronunciation" constraints="0" notnull_strength="0" exp_strength="0"/>
-        <constraint unique_strength="0" field="text" constraints="0" notnull_strength="0" exp_strength="0"/>
-        <constraint unique_strength="0" field="script" constraints="0" notnull_strength="0" exp_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="1" field="gml_id" constraints="1" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="description" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="beginLifespanVersion" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="localId" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="namespace" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="origin" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="persistence" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="tidal" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="drainsBasin" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="delineationKnown" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="length" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="length_uom" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="level" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="lower" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="lower_uom" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="upper" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="upper_uom" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="name" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="language" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="nativeness" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="nameStatus" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="sourceOfName" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="pronunciation" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="text" constraints="0" unique_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" field="script" constraints="0" unique_strength="0"/>
       </constraints>
       <constraintExpressions>
         <constraint exp="" desc="" field="gml_id"/>
@@ -996,9 +996,9 @@
       </constraintExpressions>
       <expressionfields/>
       <attributeactions>
-        <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
+        <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
       </attributeactions>
-      <attributetableconfig actionWidgetStyle="dropDown" sortOrder="0" sortExpression="">
+      <attributetableconfig sortOrder="0" sortExpression="" actionWidgetStyle="dropDown">
         <columns/>
       </attributetableconfig>
       <conditionalstyles>
@@ -1052,7 +1052,7 @@
       <pythonCode type="QString"></pythonCode>
     </Macros>
     <Measure>
-      <Ellipsoid type="QString">EPSG:7022</Ellipsoid>
+      <Ellipsoid type="QString">EPSG:7030</Ellipsoid>
     </Measure>
     <Measurement>
       <AreaUnits type="QString">m2</AreaUnits>
@@ -1103,12 +1103,6 @@
     <WMSContactPhone type="QString"></WMSContactPhone>
     <WMSContactPosition type="QString"></WMSContactPosition>
     <WMSDefaultMapUnitsPerMm type="double">1</WMSDefaultMapUnitsPerMm>
-    <WMSExtent type="QStringList">
-      <value>1405090.18250000011175871</value>
-      <value>4672168.5</value>
-      <value>1921379.81749999988824129</value>
-      <value>4930951.5</value>
-    </WMSExtent>
     <WMSFeatureInfoUseAttributeFormSettings type="bool">true</WMSFeatureInfoUseAttributeFormSettings>
     <WMSFees type="QString">conditions unknown</WMSFees>
     <WMSImageQuality type="int">90</WMSImageQuality>
@@ -1157,6 +1151,34 @@
   </dataDefinedServerProperties>
   <visibility-presets/>
   <transformContext>
+    <srcDest coordinateOp="+proj=pipeline +step +inv +proj=tmerc +lat_0=49 +lon_0=-2 +k=0.9996012717 +x_0=400000 +y_0=-100000 +ellps=airy +step +proj=hgridshift +grids=uk_os_OSTN15_NTv2_OSGBtoETRS.tif +step +proj=webmerc +lat_0=0 +lon_0=0 +x_0=0 +y_0=0 +ellps=WGS84" allowFallback="1">
+      <src>
+        <spatialrefsys nativeFormat="Wkt">
+          <wkt>PROJCRS["OSGB36 / British National Grid",BASEGEOGCRS["OSGB36",DATUM["Ordnance Survey of Great Britain 1936",ELLIPSOID["Airy 1830",6377563.396,299.3249646,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4277]],CONVERSION["British National Grid",METHOD["Transverse Mercator",ID["EPSG",9807]],PARAMETER["Latitude of natural origin",49,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8801]],PARAMETER["Longitude of natural origin",-2,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8802]],PARAMETER["Scale factor at natural origin",0.9996012717,SCALEUNIT["unity",1],ID["EPSG",8805]],PARAMETER["False easting",400000,LENGTHUNIT["metre",1],ID["EPSG",8806]],PARAMETER["False northing",-100000,LENGTHUNIT["metre",1],ID["EPSG",8807]]],CS[Cartesian,2],AXIS["(E)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["(N)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["Engineering survey, topographic mapping."],AREA["United Kingdom (UK) - offshore to boundary of UKCS within 49°45'N to 61°N and 9°W to 2°E; onshore Great Britain (England, Wales and Scotland). Isle of Man onshore."],BBOX[49.75,-9,61.01,2.01]],ID["EPSG",27700]]</wkt>
+          <proj4>+proj=tmerc +lat_0=49 +lon_0=-2 +k=0.9996012717 +x_0=400000 +y_0=-100000 +ellps=airy +units=m +no_defs</proj4>
+          <srsid>2437</srsid>
+          <srid>27700</srid>
+          <authid>EPSG:27700</authid>
+          <description>OSGB36 / British National Grid</description>
+          <projectionacronym>tmerc</projectionacronym>
+          <ellipsoidacronym>EPSG:7001</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </src>
+      <dest>
+        <spatialrefsys nativeFormat="Wkt">
+          <wkt>PROJCRS["WGS 84 / Pseudo-Mercator",BASEGEOGCRS["WGS 84",ENSEMBLE["World Geodetic System 1984 ensemble",MEMBER["World Geodetic System 1984 (Transit)"],MEMBER["World Geodetic System 1984 (G730)"],MEMBER["World Geodetic System 1984 (G873)"],MEMBER["World Geodetic System 1984 (G1150)"],MEMBER["World Geodetic System 1984 (G1674)"],MEMBER["World Geodetic System 1984 (G1762)"],MEMBER["World Geodetic System 1984 (G2139)"],ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]],ENSEMBLEACCURACY[2.0]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4326]],CONVERSION["Popular Visualisation Pseudo-Mercator",METHOD["Popular Visualisation Pseudo Mercator",ID["EPSG",1024]],PARAMETER["Latitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8801]],PARAMETER["Longitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8802]],PARAMETER["False easting",0,LENGTHUNIT["metre",1],ID["EPSG",8806]],PARAMETER["False northing",0,LENGTHUNIT["metre",1],ID["EPSG",8807]]],CS[Cartesian,2],AXIS["easting (X)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["northing (Y)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["Web mapping and visualisation."],AREA["World between 85.06°S and 85.06°N."],BBOX[-85.06,-180,85.06,180]],ID["EPSG",3857]]</wkt>
+          <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0 +lon_0=0 +x_0=0 +y_0=0 +k=1 +units=m +nadgrids=@null +wktext +no_defs</proj4>
+          <srsid>3857</srsid>
+          <srid>3857</srid>
+          <authid>EPSG:3857</authid>
+          <description>WGS 84 / Pseudo-Mercator</description>
+          <projectionacronym>merc</projectionacronym>
+          <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </dest>
+    </srcDest>
     <srcDest coordinateOp="+proj=pipeline +step +inv +proj=webmerc +lat_0=0 +lon_0=0 +x_0=0 +y_0=0 +ellps=WGS84 +step +proj=push +v_3 +step +proj=cart +ellps=WGS84 +step +inv +proj=helmert +x=-104.1 +y=-49.1 +z=-9.9 +rx=0.971 +ry=-2.917 +rz=0.714 +s=-11.68 +convention=position_vector +step +inv +proj=cart +ellps=intl +step +proj=pop +v_3 +step +proj=tmerc +lat_0=0 +lon_0=9 +k=0.9996 +x_0=1500000 +y_0=0 +ellps=intl" allowFallback="1">
       <src>
         <spatialrefsys nativeFormat="Wkt">
@@ -1210,32 +1232,32 @@
   <Layouts/>
   <mapViewDocks3D/>
   <Bookmarks/>
-  <ProjectViewSettings UseProjectScales="0" rotation="0">
+  <ProjectViewSettings rotation="0" UseProjectScales="0">
     <Scales/>
-    <DefaultViewExtent ymin="4672168.5" ymax="4930951.5" xmax="1921379.81750924792140722" xmin="1405090.18249075207859278">
+    <DefaultViewExtent xmin="865681.94563615624792874" xmax="1591870.18504935945384204" ymin="5183794.21474149730056524" ymax="5547785.97133241686969995">
       <spatialrefsys nativeFormat="Wkt">
-        <wkt>PROJCRS["Monte Mario / Italy zone 1",BASEGEOGCRS["Monte Mario",DATUM["Monte Mario",ELLIPSOID["International 1924",6378388,297,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4265]],CONVERSION["Italy zone 1",METHOD["Transverse Mercator",ID["EPSG",9807]],PARAMETER["Latitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8801]],PARAMETER["Longitude of natural origin",9,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8802]],PARAMETER["Scale factor at natural origin",0.9996,SCALEUNIT["unity",1],ID["EPSG",8805]],PARAMETER["False easting",1500000,LENGTHUNIT["metre",1],ID["EPSG",8806]],PARAMETER["False northing",0,LENGTHUNIT["metre",1],ID["EPSG",8807]]],CS[Cartesian,2],AXIS["easting (X)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["northing (Y)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["Engineering survey, topographic mapping."],AREA["Italy - onshore and offshore - west of 12°E."],BBOX[36.53,5.93,47.04,12]],ID["EPSG",3003]]</wkt>
-        <proj4>+proj=tmerc +lat_0=0 +lon_0=9 +k=0.9996 +x_0=1500000 +y_0=0 +ellps=intl +units=m +no_defs</proj4>
-        <srsid>968</srsid>
-        <srid>3003</srid>
-        <authid>EPSG:3003</authid>
-        <description>Monte Mario / Italy zone 1</description>
-        <projectionacronym>tmerc</projectionacronym>
-        <ellipsoidacronym>EPSG:7022</ellipsoidacronym>
+        <wkt>PROJCRS["WGS 84 / Pseudo-Mercator",BASEGEOGCRS["WGS 84",ENSEMBLE["World Geodetic System 1984 ensemble",MEMBER["World Geodetic System 1984 (Transit)"],MEMBER["World Geodetic System 1984 (G730)"],MEMBER["World Geodetic System 1984 (G873)"],MEMBER["World Geodetic System 1984 (G1150)"],MEMBER["World Geodetic System 1984 (G1674)"],MEMBER["World Geodetic System 1984 (G1762)"],MEMBER["World Geodetic System 1984 (G2139)"],ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]],ENSEMBLEACCURACY[2.0]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4326]],CONVERSION["Popular Visualisation Pseudo-Mercator",METHOD["Popular Visualisation Pseudo Mercator",ID["EPSG",1024]],PARAMETER["Latitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8801]],PARAMETER["Longitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8802]],PARAMETER["False easting",0,LENGTHUNIT["metre",1],ID["EPSG",8806]],PARAMETER["False northing",0,LENGTHUNIT["metre",1],ID["EPSG",8807]]],CS[Cartesian,2],AXIS["easting (X)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["northing (Y)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["Web mapping and visualisation."],AREA["World between 85.06°S and 85.06°N."],BBOX[-85.06,-180,85.06,180]],ID["EPSG",3857]]</wkt>
+        <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0 +lon_0=0 +x_0=0 +y_0=0 +k=1 +units=m +nadgrids=@null +wktext +no_defs</proj4>
+        <srsid>3857</srsid>
+        <srid>3857</srid>
+        <authid>EPSG:3857</authid>
+        <description>WGS 84 / Pseudo-Mercator</description>
+        <projectionacronym>merc</projectionacronym>
+        <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
         <geographicflag>false</geographicflag>
       </spatialrefsys>
     </DefaultViewExtent>
   </ProjectViewSettings>
-  <ProjectStyleSettings RandomizeDefaultSymbolColor="1" DefaultSymbolOpacity="1" projectStyleId="attachment:///cpuQtA_styles.db">
+  <ProjectStyleSettings RandomizeDefaultSymbolColor="1" projectStyleId="attachment:///gwWfvB_styles.db" DefaultSymbolOpacity="1">
     <databases/>
   </ProjectStyleSettings>
-  <ProjectTimeSettings cumulativeTemporalRange="0" frameRate="1" timeStep="1" timeStepUnit="h"/>
+  <ProjectTimeSettings timeStepUnit="h" frameRate="1" timeStep="1" cumulativeTemporalRange="0"/>
   <ElevationProperties>
     <terrainProvider type="flat">
       <TerrainProvider offset="0" scale="1"/>
     </terrainProvider>
   </ElevationProperties>
-  <ProjectDisplaySettings CoordinateAxisOrder="Default" CoordinateType="MapCrs">
+  <ProjectDisplaySettings CoordinateType="MapCrs" CoordinateAxisOrder="Default">
     <BearingFormat id="bearing">
       <Option type="Map">
         <Option type="invalid" name="decimal_separator"/>
